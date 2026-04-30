@@ -10,18 +10,11 @@ export const metadata: Metadata = {
     default: "Meat Zoo | Fresh Chicken Delivered",
     template: "%s | Meat Zoo",
   },
-  description:
-    "Modern chicken delivery storefront with premium cuts and direct WhatsApp ordering.",
-  keywords: [
-    "chicken delivery",
-    "fresh poultry",
-    "whatsapp order",
-    "meat zoo",
-  ],
+  description: "Modern chicken delivery storefront with premium cuts and direct WhatsApp ordering.",
+  keywords: ["chicken delivery", "fresh poultry", "whatsapp order", "meat zoo"],
   openGraph: {
     title: "Meat Zoo",
-    description:
-      "Browse premium chicken cuts and order instantly through WhatsApp.",
+    description: "Browse premium chicken cuts and order instantly through WhatsApp.",
     type: "website",
   },
 };

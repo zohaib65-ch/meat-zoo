@@ -12,23 +12,14 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <article className="group overflow-hidden rounded-2xl border border-brand-dark/10 bg-brand-white shadow-[0_10px_30px_rgba(16,2,2,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(16,2,2,0.14)]">
       <div className="relative h-52 overflow-hidden">
-        <Image
-          src={product.image}
-          alt={product.name}
-          fill
-          className="object-cover transition duration-300 group-hover:scale-105"
-        />
+        <Image src={product.image} alt={product.name} fill className="object-cover transition duration-300 group-hover:scale-105" />
         <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-brand-dark/18 to-transparent" />
       </div>
 
       <div className="space-y-4 p-5">
         <div className="space-y-2">
-          <h3 className="font-display text-2xl font-semibold text-brand-dark">
-            {product.name}
-          </h3>
-          <p className="text-sm leading-7 text-brand-muted">
-            {product.description}
-          </p>
+          <h3 className="font-display text-2xl font-semibold text-brand-dark">{product.name}</h3>
+          <p className="text-sm leading-7 text-brand-muted">{product.description}</p>
         </div>
 
         <p className="text-lg font-semibold text-brand-primary">{product.price}</p>

@@ -5,5 +5,4 @@ export const siteData = {
   address: "23 Farmhouse Road, Model Town, Lahore",
 };
 
-export const createWhatsAppLink = (message: string) =>
-  `https://wa.me/${siteData.whatsappNumber}?text=${encodeURIComponent(message)}`;
+export const createWhatsAppLink = (message: string) => `https://wa.me/${siteData.whatsappNumber}?text=${encodeURIComponent(message)}`;

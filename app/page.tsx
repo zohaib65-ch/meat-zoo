@@ -4,16 +4,11 @@ import { ProductCard } from "@/components/ProductCard";
 import { productData } from "@/data/productData";
 import { createWhatsAppLink } from "@/data/siteData";
 
-const heroHighlights = [
-  "Freshly prepared cuts every day",
-  "Hygienic handling and cold-chain packaging",
-  "Direct WhatsApp ordering in one tap",
-];
+const heroHighlights = ["Freshly prepared cuts every day", "Hygienic handling and cold-chain packaging", "Direct WhatsApp ordering in one tap"];
 
 export const metadata: Metadata = {
   title: "All Products",
-  description:
-    "Explore premium fresh chicken products and order instantly on WhatsApp.",
+  description: "Explore premium fresh chicken products and order instantly on WhatsApp.",
 };
 
 export default function HomePage() {
@@ -22,25 +17,14 @@ export default function HomePage() {
   return (
     <div className="bg-brand-cream">
       <section className="relative isolate overflow-hidden">
-        <Image
-          src="/images/hero.svg"
-          alt="Fresh chicken delivery hero background"
-          fill
-          priority
-          className="object-cover"
-        />
+        <Image src="/images/hero.svg" alt="Fresh chicken delivery hero background" fill priority className="object-cover" />
         <div className="absolute inset-0 bg-brand-dark/65" />
         <div className="relative mx-auto flex min-h-[78vh] w-full max-w-7xl items-center px-6 py-20 sm:px-8 lg:px-10">
           <div className="max-w-2xl text-brand-white">
-            <p className="mb-4 inline-flex rounded-full border border-brand-white/20 bg-brand-white/10 px-4 py-2 text-sm tracking-wide">
-              Premium Poultry, Everyday Fresh
-            </p>
-            <h1 className="font-display text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-              Fresh Chicken Delivered
-            </h1>
+            <p className="mb-4 inline-flex rounded-full border border-brand-white/20 bg-brand-white/10 px-4 py-2 text-sm tracking-wide">Premium Poultry, Everyday Fresh</p>
+            <h1 className="font-display text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-6xl">Fresh Chicken Delivered</h1>
             <p className="mt-5 max-w-xl text-base leading-7 text-brand-white/85 sm:text-lg">
-              Shop quality chicken cuts with a modern, hassle-free flow. Browse
-              products, tap order, and confirm instantly on WhatsApp.
+              Shop quality chicken cuts with a modern, hassle-free flow. Browse products, tap order, and confirm instantly on WhatsApp.
             </p>
             <div className="mt-8">
               <a
@@ -54,10 +38,7 @@ export default function HomePage() {
             </div>
             <ul className="mt-10 grid gap-3 text-sm text-brand-white/90 sm:grid-cols-2">
               {heroHighlights.map((item) => (
-                <li
-                  key={item}
-                  className="rounded-xl border border-brand-white/15 bg-brand-white/8 px-4 py-3 backdrop-blur-sm"
-                >
+                <li key={item} className="rounded-xl border border-brand-white/15 bg-brand-white/8 px-4 py-3 backdrop-blur-sm">
                   {item}
                 </li>
               ))}
@@ -66,23 +47,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section
-        id="products"
-        className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10"
-      >
+      <section id="products" className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
         <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-primary">
-              All Products
-            </p>
-            <h2 className="mt-3 font-display text-3xl font-semibold text-brand-dark sm:text-4xl">
-              Handpicked Chicken Cuts
-            </h2>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-primary">All Products</p>
+            <h2 className="mt-3 font-display text-3xl font-semibold text-brand-dark sm:text-4xl">Handpicked Chicken Cuts</h2>
           </div>
-          <p className="max-w-xl text-sm leading-7 text-brand-muted sm:text-base">
-            Choose from our ready-to-order bestsellers. Every item below opens
-            WhatsApp with a pre-filled order message.
-          </p>
+          <p className="max-w-xl text-sm leading-7 text-brand-muted sm:text-base">Choose from our ready-to-order bestsellers. Every item below opens WhatsApp with a pre-filled order message.</p>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
