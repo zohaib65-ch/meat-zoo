@@ -17,27 +17,14 @@ const navigation = [
 const getLinkClasses = (isActive: boolean) =>
   [
     "rounded-full px-4 py-2 text-sm font-semibold transition duration-200",
-    isActive ? "bg-brand-primary text-brand-white shadow-[0_6px_18px_rgba(218,5,8,0.35)]" : "text-brand-dark hover:bg-brand-surface hover:text-brand-primary",
+    isActive ? "bg-brand-primary text-brand-white! shadow-[0_6px_18px_rgba(218,5,8,0.35)]" : "text-brand-dark hover:bg-brand-surface hover:text-brand-primary",
   ].join(" ");
 
 export function Header() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
-  const storeBanner = useAppSelector((state) => state.ui.bannerText);
-  const whatsappSupportLink = createWhatsAppLink("I have a question about your products.");
-
   return (
     <header className="sticky top-0 z-50 border-b border-brand-dark/10 bg-brand-white backdrop-blur-md">
-      <div className="border-b border-brand-dark/10 bg-brand-dark text-brand-white">
-        <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-2 text-xs sm:px-8 lg:px-10">
-          <p className="tracking-wide text-brand-white/90">{storeBanner}</p>
-          <a href={whatsappSupportLink} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-brand-primary px-3 py-1 font-semibold transition hover:bg-[#b70406]">
-            <MessageCircle size={14} />
-            WhatsApp
-          </a>
-        </div>
-      </div>
-
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4 sm:px-8 lg:px-10">
         <Link href="/" className="flex items-center gap-3">
           <span className="overflow-hidden">

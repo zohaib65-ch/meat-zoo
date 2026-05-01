@@ -1,7 +1,7 @@
 export const siteData = {
   brandName: "Meat Zoo",
-  whatsappNumber: "923001112233",
-  phoneDisplay: "+92 300 111 2233",
+  whatsappNumber: "923242024403",
+  phoneDisplay: "+92 324 202 4430",
   address: "23 Farmhouse Road, Model Town, Lahore",
 };
 

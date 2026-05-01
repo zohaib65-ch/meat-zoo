@@ -18,8 +18,8 @@ export function ProductCard({ product }: ProductCardProps) {
 
       <div className="space-y-4 p-5">
         <div className="space-y-2">
-          <h3 className="font-display text-2xl font-semibold text-brand-dark">{product.name}</h3>
-          <p className="text-sm leading-7 text-brand-muted">{product.description}</p>
+          <h3 className="font-display text-xl font-semibold text-brand-dark">{product.name}</h3>
+          <p className="text-sm leading-5 text-brand-muted">{product.description}</p>
         </div>
 
         <p className="text-lg font-semibold text-brand-primary">{product.price}</p>
@@ -28,7 +28,7 @@ export function ProductCard({ product }: ProductCardProps) {
           href={orderLink}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex w-full items-center justify-center rounded-full bg-brand-primary px-4 py-3 text-sm font-bold text-brand-white shadow-[0_8px_20px_rgba(218,5,8,0.34)] transition hover:bg-[#b70406]"
+          className="inline-flex w-full items-center justify-center rounded-full bg-brand-primary px-4 py-3 text-sm font-bold text-brand-white! shadow-[0_8px_20px_rgba(218,5,8,0.34)] transition hover:bg-[#b70406]"
         >
           Order on WhatsApp
         </a>

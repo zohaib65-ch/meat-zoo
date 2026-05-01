@@ -25,13 +25,8 @@ export function Footer() {
       <div className="pointer-events-none absolute -bottom-20 right-0 h-52 w-52 rounded-full bg-brand-white/8 blur-2xl" />
       <div className="mx-auto grid w-full max-w-7xl gap-10 px-6 py-12 sm:px-8 lg:grid-cols-3 lg:px-10">
         <div>
-          <p className="font-display text-3xl font-extrabold tracking-tight">
-            {siteData.brandName}
-          </p>
-          <p className="mt-3 max-w-sm text-sm leading-7 text-brand-white/80">
-            Fresh chicken cuts delivered with a modern, premium experience and
-            direct WhatsApp ordering.
-          </p>
+          <p className="font-display text-3xl font-extrabold tracking-tight">{siteData.brandName}</p>
+          <p className="mt-3 max-w-sm text-sm leading-7 text-brand-white/80">Fresh chicken cuts delivered with a modern, premium experience and direct WhatsApp ordering.</p>
         </div>
 
         <div>
