@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Facebook, Instagram, MessageCircle } from "lucide-react";
 import { createWhatsAppLink, siteData } from "@/data/siteData";
+import Image from "next/image";
 
 const quickLinks = [
   { label: "Home", href: "/" },
@@ -29,8 +30,12 @@ export function Footer() {
         {/* Line 1: Logo and Quick Links */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 pb-8 border-b border-white/10">
           <div>
-            <p className="font-display text-2xl font-extrabold tracking-tight">{siteData.brandName}</p>
-            <p className="mt-1 text-sm text-brand-white/60">Trusted quality today, growing for tomorrow.</p>
+             <Link href="/" className="flex items-center gap-3">
+          <span className="overflow-hidden">
+            <Image src="/footer-logo.png" alt={`${siteData.brandName} logo`} width={92} height={52} className="h-[42px] w-[150px] object-cover" priority />
+          </span>
+        </Link>
+            <p className="mt-4 text-sm text-brand-white/60">Trusted quality today, growing for tomorrow.</p>
           </div>
           <nav>
             <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium text-brand-white/80">
