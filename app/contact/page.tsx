@@ -60,7 +60,7 @@ export default function ContactPage() {
             href={whatsappOrderLink}
             target="_blank"
             rel="noreferrer"
-            className="mt-4 inline-flex items-center gap-2 rounded-full bg-brand-primary px-5 py-3 text-sm font-semibold text-brand-white transition hover:bg-[#b70406]"
+            className="mt-4 inline-flex items-center gap-2 rounded-full bg-brand-primary px-5 py-3 text-sm font-semibold text-brand-white! transition hover:bg-[#b70406]"
           >
             <MessageCircle size={18} />
             Order on WhatsApp

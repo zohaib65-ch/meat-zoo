@@ -1,8 +1,8 @@
 export const siteData = {
   brandName: "Meat Zoo",
-  whatsappNumber: "923242024403",
-  phoneDisplay: "+92 324 202 4430",
-  address: "23 Farmhouse Road, Model Town, Lahore",
+  whatsappNumber: "923001772026",
+  phoneDisplay: "+92 300 177 2026",
+  address: "Bhaiwala Road Near Faislabad Pakwan Center Nishatabad, Faisalabad, Pakistan",
 };
 
 export const createWhatsAppLink = (message: string) => `https://wa.me/${siteData.whatsappNumber}?text=${encodeURIComponent(message)}`;
