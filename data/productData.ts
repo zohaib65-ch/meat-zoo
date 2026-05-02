@@ -21,7 +21,7 @@ export const productData: Product[] = [
   {
     id: "chest-tikka",
     name: "Chicken Chest Tikka",
-    price: 1049,
+    price: 1249,
     image: "/products/chest-tikka.jpeg",
     description: "Tender chicken breast pieces perfect for tikka",
     category: "chicken",
