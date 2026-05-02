@@ -22,7 +22,7 @@ export function ProductCard({ product }: ProductCardProps) {
           <p className="text-sm leading-5 text-brand-muted">{product.description}</p>
         </div>
 
-        <p className="text-lg font-semibold text-brand-primary">{product.price}</p>
+        <p className="text-lg font-bold text-brand-primary">Rs {product.price.toLocaleString()} /kg</p>
 
         <a
           href={orderLink}
