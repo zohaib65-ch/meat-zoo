@@ -9,7 +9,8 @@ import { createWhatsAppLink, siteData } from "@/data/siteData";
 import { useAppSelector } from "@/redux/hooks";
 
 const navigation = [
-  { label: "All Products", href: "/" },
+  { label: "Home", href: "/" },
+  { label: "Our Products", href: "/products" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];

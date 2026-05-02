@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { ProductCard } from "@/components/ProductCard";
 import { productData } from "@/data/productData";
 import { createWhatsAppLink } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "All Products",
+  title: "Home",
   description: "Explore premium fresh chicken products and order instantly on WhatsApp.",
 };
 
@@ -15,8 +16,8 @@ export default function HomePage() {
   return (
     <div className="bg-brand-cream">
       <section className="relative isolate overflow-hidden">
-        <Image src="/images/hero.svg" alt="Fresh chicken delivery hero background" fill priority className="object-cover" />
-        <div className="absolute inset-0 bg-brand-dark/65" />
+        <Image src="/images/hero.jpg" alt="Fresh chicken delivery hero background" fill priority className="object-cover" />
+        <div className="absolute inset-0 bg-brand-dark/70" />
         <div className="relative mx-auto flex min-h-[78vh] w-full max-w-7xl items-center px-6 py-20 sm:px-8 lg:px-10">
           <div className="max-w-2xl text-brand-white">
             <p className="mb-4 inline-flex rounded-full border border-brand-white/20 bg-brand-white/10 px-4 py-2 text-sm tracking-wide">Premium Poultry, Everyday Fresh</p>
@@ -47,9 +48,18 @@ export default function HomePage() {
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {productData.map((product) => (
+          {productData.slice(0, 8).map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
+        </div>
+
+        <div className="mt-12 flex justify-center">
+          <Link
+            href="/products"
+            className="inline-flex items-center gap-2 rounded-full border-2 border-brand-primary px-8 py-3 text-sm font-bold text-brand-primary transition hover:bg-brand-primary hover:text-white"
+          >
+            Browse Our Products
+          </Link>
         </div>
       </section>
     </div>
