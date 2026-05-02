@@ -64,7 +64,9 @@ export function Footer() {
               );
             })}
           </div>
-          <p>&copy; {new Date().getFullYear()} {siteData.brandName}. All rights reserved.</p>
+          <p className="text-center">
+            &copy; {new Date().getFullYear()} {siteData.brandName}. All rights reserved. | Designed and developed by <span className="text-brand-primary/80 font-semibold">Zohaib</span>
+          </p>
         </div>
       </div>
     </footer>
