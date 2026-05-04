@@ -1,6 +1,6 @@
 export type ProductCategory = "chicken" | "beef" | "mutton";
 
-export type ChickenSubCategory = "bone-in" | "boneless" | "organs";
+export type ChickenSubCategory = "bone-in" | "boneless" | "organs" | "family-pack";
 
 export type Product = {
   id: string;
@@ -167,7 +167,7 @@ export const productData: Product[] = [
     id: "thigh-bone-in",
     name: "Chicken Thigh",
     price: 899,
-    image: "/products/drumsticks.jpeg",
+    image: "/products/thigh-bone-in.png",
     description:
       "Chicken Thigh is a tender and juicy upper-leg cut known for its rich flavor and soft texture. Ideal for grilling, curries, BBQ, and fried dishes, it stays moist and flavorful in every recipe.",
     category: "chicken",
@@ -183,11 +183,11 @@ export const productData: Product[] = [
     id: "bbq-pack",
     name: "Meat Zoo Bar.B.Q pack",
     price: 3999,
-    image: "/products/leg-tikka.jpeg",
+    image: "/products/bar-BQ-pack.png",
     description:
       "Meat Zoo Bar.B.Q Pack includes a delicious variety of fresh, marinated chicken cuts specially prepared for grilling and BBQ gatherings. Packed with rich flavor, juicy texture, and high-quality protein, it’s perfect for parties, family cookouts, and weekend feasts.",
     category: "chicken",
-    subCategory: "bone-in",
+    subCategory: "family-pack",
     stock: "Available",
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
@@ -199,11 +199,11 @@ export const productData: Product[] = [
     id: "gym-combo-pack",
     name: "GYM COMBO PACK",
     price: 999,
-    image: "/products/chest-tikka.jpeg",
+    image: "/products/gym-combo-pack.png",
     description:
       "Gym Combo Pack is a high-protein selection of premium chicken cuts designed to support muscle growth, fitness, and healthy meal planning. Packed with lean protein and fresh quality meat, it’s perfect for gym diets, meal prep, and active lifestyles.",
     category: "chicken",
-    subCategory: "boneless",
+    subCategory: "family-pack",
     stock: "Available",
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
@@ -215,7 +215,7 @@ export const productData: Product[] = [
     id: "breast-boneless",
     name: "Chicken Brest Boneless",
     price: 1249,
-    image: "/products/chest-tikka.jpeg",
+    image: "/products/chicken-brest-boneless.png",
     description:
       "Chicken Breast Boneless is a lean, tender cut with high protein and low fat, perfect for healthy meals and fitness diets. Ideal for grilling, frying, curries, and meal prep, it offers juicy texture and versatile cooking options.",
     category: "chicken",
@@ -231,7 +231,7 @@ export const productData: Product[] = [
     id: "chicken-cubes",
     name: "Chicken Cubes",
     price: 1299,
-    image: "/products/chest-tikka.jpeg",
+    image: "/products/chicken-cubes.png",
     description:
       "Chicken Cubes are freshly cut boneless chicken pieces, perfectly sized for quick cooking and easy seasoning. Ideal for curries, BBQ, handi, pasta, and stir-fry dishes, they offer tender texture and rich flavor in every bite.",
     category: "chicken",
@@ -247,7 +247,7 @@ export const productData: Product[] = [
     id: "leg-boneless",
     name: "Chicken Leg Boneless",
     price: 1299,
-    image: "/products/leg-tikka.jpeg",
+    image: "/products/chicken-leg-boneless.png",
     description:
       "Chicken Leg Boneless is a juicy and tender cut made from carefully deboned chicken leg meat, known for its rich flavor and soft texture. Perfect for BBQ, karahi, handi, grilling, and curries, it delivers delicious taste with every meal.",
     category: "chicken",
@@ -263,7 +263,7 @@ export const productData: Product[] = [
     id: "strips-boneless",
     name: "Chicken Strips Boneless",
     price: 1299,
-    image: "/products/chest-tikka.jpeg",
+    image: "/products/chicken-strips-boneless.png",
     description:
       "Chicken Strips Boneless are tender, lean chicken breast pieces cut into long strips for quick and easy cooking. Perfect for fried snacks, wraps, burgers, pasta, and stir-fry recipes, they offer high protein and delicious flavor in every bite.",
     category: "chicken",
@@ -279,7 +279,7 @@ export const productData: Product[] = [
     id: "thigh-boneless",
     name: "Chicken Thigh Boneless",
     price: 1299,
-    image: "/products/leg-tikka.jpeg",
+    image: "/products/chicken-thigh-boneless.png",
     description:
       "Chicken Thigh Boneless is a tender and juicy cut made from carefully deboned thigh meat, known for its rich flavor and soft texture. Perfect for BBQ, grilling, curries, handi, and fried dishes, it stays moist and delicious in every recipe.",
     category: "chicken",

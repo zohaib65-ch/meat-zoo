@@ -23,6 +23,7 @@ export default function ProductsPage() {
     { id: "bone-in", label: "Bone In" },
     { id: "boneless", label: "Boneless" },
     { id: "organs", label: "Organs" },
+    { id: "family-pack", label: "Family Pack" },
   ];
 
   const filteredProducts = productData.filter((product) => {

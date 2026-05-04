@@ -14,6 +14,8 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const heroCtaLink = createWhatsAppLink("I want to place an order.");
 
+  const familyPacks = productData.filter((product) => product.subCategory === "family-pack");
+
   return (
     <div className="bg-brand-cream">
       <section className="relative isolate overflow-hidden">
@@ -49,7 +51,7 @@ export default function HomePage() {
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {productData.slice(0, 9).map((product) => (
+          {productData.slice(0, 6).map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
@@ -61,6 +63,19 @@ export default function HomePage() {
           >
             Browse Our Products <ArrowRight className="h-4 w-4" />
           </Link>
+        </div>
+      </section>
+
+      <section className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
+        <div className="mb-10">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-primary">Special Packs</p>
+          <h2 className="mt-3 font-display text-2xl md:text-3xl font-semibold text-brand-dark sm:text-4xl">Family Packs</h2>
+        </div>
+
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {familyPacks.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
         </div>
       </section>
     </div>
