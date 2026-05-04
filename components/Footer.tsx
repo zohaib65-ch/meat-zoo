@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Facebook, Instagram, MessageCircle } from "lucide-react";
-import { createWhatsAppLink, siteData } from "@/data/siteData";
+import { Facebook, Instagram, LucideProps } from "lucide-react";
+import { siteData } from "@/data/siteData";
 import Image from "next/image";
 
 const quickLinks = [
@@ -14,12 +14,16 @@ const quickLinks = [
 ];
 
 const socialLinks = [
-  { label: "Instagram", href: "https://instagram.com", icon: Instagram },
-  { label: "Facebook", href: "https://facebook.com", icon: Facebook },
+  { label: "Instagram", href: "https://www.instagram.com/meatzoo.pk?igsh=M3VjMHFlcTlqd20w", icon: Instagram },
+  { label: "Facebook", href: "https://www.facebook.com/share/17NcXfBmp6/", icon: Facebook },
   {
-    label: "WhatsApp",
-    href: createWhatsAppLink("Hello, I want to know more about your products."),
-    icon: MessageCircle,
+    label: "TikTok",
+    href: "https://www.tiktok.com/@meatzoo0",
+    icon: (props: LucideProps) => (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width={props.size} height={props.size} {...props}>
+        <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+      </svg>
+    ),
   },
 ];
 
@@ -30,11 +34,11 @@ export function Footer() {
         {/* Line 1: Logo and Quick Links */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 pb-8 border-b border-white/10">
           <div>
-             <Link href="/" className="flex items-center gap-3">
-          <span className="overflow-hidden">
-            <Image src="/footer-logo.png" alt={`${siteData.brandName} logo`} width={92} height={52} className="h-[42px] w-[150px] object-cover" priority />
-          </span>
-        </Link>
+            <Link href="/" className="flex items-center gap-3">
+              <span className="overflow-hidden">
+                <Image src="/footer-logo.png" alt={`${siteData.brandName} logo`} width={92} height={52} className="h-[42px] w-[150px] object-cover" priority />
+              </span>
+            </Link>
             <p className="mt-4 text-sm text-brand-white/60">Trusted quality today, growing for tomorrow.</p>
           </div>
           <nav>
@@ -56,14 +60,7 @@ export function Footer() {
             {socialLinks.map((item) => {
               const Icon = item.icon;
               return (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={item.label}
-                  className="transition hover:text-brand-primary"
-                >
+                <a key={item.label} href={item.href} target="_blank" rel="noreferrer" aria-label={item.label} className="transition hover:text-brand-primary">
                   <Icon size={18} />
                 </a>
               );
