@@ -29,7 +29,7 @@ export function Header() {
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4 sm:px-8 lg:px-10">
         <Link href="/" className="flex items-center gap-3">
           <span className="overflow-hidden">
-            <Image src="/site-logo.jpeg" alt={`${siteData.brandName} logo`} width={92} height={52} className="h-[42px] w-[120px] object-cover" priority />
+            <Image src="/site-logo.jpg" alt={`${siteData.brandName} logo`} width={92} height={52} className="h-[48px] w-[120px] object-cover" priority />
           </span>
         </Link>
 

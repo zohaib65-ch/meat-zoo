@@ -43,7 +43,7 @@ export const productData: Product[] = [
     description:
       "Chicken Chest Tikka is made from tender boneless chicken breast pieces, carefully trimmed and cut into cubes perfect for marination and grilling. Its lean, juicy texture absorbs spices well, making it ideal for BBQ, tikka, and grilled dishes.",
     category: "chicken",
-    subCategory: "boneless",
+    subCategory: "bone-in",
     stock: "Available",
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
@@ -66,6 +66,22 @@ export const productData: Product[] = [
     isOrganic: true,
     weight: "1 kg",
     tags: ["Chicken", "Drumsticks", "Leg"],
+  },
+  {
+    id: "chicken-mince",
+    name: "Chicken Mince",
+    price: 1249,
+    image: "/products/chicken-mince.png",
+    description:
+      "Chicken Mince is finely ground fresh chicken meat, packed with high protein and rich flavor for versatile cooking. Ideal for kebabs, burgers, meatballs, pasta, and healthy homemade recipes, it offers tender texture and quick preparation.",
+    category: "chicken",
+    subCategory: "boneless",
+    stock: "Available",
+    brand: "Meat Zoo",
+    vendor: "Farm and Local Store",
+    isOrganic: true,
+    weight: "1 kg",
+    tags: ["Chicken", "Mince"],
   },
   {
     id: "karahi-cuts",
