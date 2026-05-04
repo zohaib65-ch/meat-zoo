@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { ReduxProvider } from "@/redux/ReduxProvider";
 import "./globals.css";
 
@@ -25,9 +26,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en">
       <body className="min-h-screen bg-brand-white text-brand-dark antialiased">
         <ReduxProvider>
+          <ScrollToTop />
           <div className="flex min-h-screen flex-col">
             <Header />
             <main className="flex-1">{children}</main>

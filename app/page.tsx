@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ProductCard } from "@/components/ProductCard";
 import { productData } from "@/data/productData";
 import { createWhatsAppLink } from "@/data/siteData";
+import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -47,8 +48,8 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {productData.slice(0, 8).map((product) => (
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {productData.slice(0, 9).map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
@@ -56,9 +57,9 @@ export default function HomePage() {
         <div className="mt-12 flex justify-center">
           <Link
             href="/products"
-            className="inline-flex items-center gap-2 rounded-full border-2 border-brand-primary px-8 py-3 text-sm font-bold text-brand-primary transition hover:bg-brand-primary hover:text-white"
+            className="inline-flex items-center gap-2 rounded-full border-2 border-brand-primary px-8 py-3 text-sm font-bold text-brand-primary transition hover:bg-brand-primary hover:text-white!"
           >
-            Browse Our Products
+            Browse Our Products <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </section>
