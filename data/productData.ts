@@ -14,8 +14,9 @@ export type Product = {
   brand?: string;
   vendor?: string;
   isOrganic?: boolean;
-  weight?: string;
+  weight: number;
   tags?: string[];
+  items?: string[];
 };
 
 export const productData: Product[] = [
@@ -32,7 +33,7 @@ export const productData: Product[] = [
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
     isOrganic: true,
-    weight: "1 kg",
+    weight: 1,
     tags: ["Chicken", "Biryani", "Cuts"],
   },
   {
@@ -48,7 +49,7 @@ export const productData: Product[] = [
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
     isOrganic: true,
-    weight: "1 kg",
+    weight: 1,
     tags: ["Chicken", "Chest", "Tikka"],
   },
   {
@@ -64,7 +65,7 @@ export const productData: Product[] = [
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
     isOrganic: true,
-    weight: "1 kg",
+    weight: 1,
     tags: ["Chicken", "Drumsticks", "Leg"],
   },
   {
@@ -80,7 +81,7 @@ export const productData: Product[] = [
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
     isOrganic: true,
-    weight: "1 kg",
+    weight: 1,
     tags: ["Chicken", "Mince"],
   },
   {
@@ -96,7 +97,7 @@ export const productData: Product[] = [
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
     isOrganic: true,
-    weight: "1 kg",
+    weight: 1,
     tags: ["Chicken", "Karahi", "Cuts"],
   },
   {
@@ -112,7 +113,7 @@ export const productData: Product[] = [
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
     isOrganic: true,
-    weight: "1 kg",
+    weight: 1,
     tags: ["Chicken", "Leg", "Tikka"],
   },
   {
@@ -128,7 +129,7 @@ export const productData: Product[] = [
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
     isOrganic: true,
-    weight: "1 kg",
+    weight: 1,
     tags: ["Chicken", "Neck"],
   },
   {
@@ -144,7 +145,7 @@ export const productData: Product[] = [
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
     isOrganic: true,
-    weight: "1 kg",
+    weight: 1,
     tags: ["Chicken", "Wings"],
   },
   {
@@ -160,7 +161,7 @@ export const productData: Product[] = [
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
     isOrganic: true,
-    weight: "1 kg",
+    weight: 1,
     tags: ["Chicken", "Drumsticks", "Lollipop"],
   },
   {
@@ -176,7 +177,7 @@ export const productData: Product[] = [
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
     isOrganic: true,
-    weight: "1 kg",
+    weight: 1,
     tags: ["Full", "Chicken"],
   },
   {
@@ -192,7 +193,7 @@ export const productData: Product[] = [
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
     isOrganic: true,
-    weight: "1 kg",
+    weight: 1,
     tags: ["Chicken", "Thigh", "Upper-Leg"],
   },
   {
@@ -208,8 +209,9 @@ export const productData: Product[] = [
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
     isOrganic: true,
-    weight: "1.5 kg",
+    weight: 3.5,
     tags: ["Chicken", "Leg", "Chest", "Boneless", "Protein"],
+    items: ["Chest Tikka", "Leg Tikka", "Drumstick", "Drumstick Lollipop", "Minibites", "Mince"],
   },
   {
     id: "gym-combo-pack",
@@ -224,8 +226,9 @@ export const productData: Product[] = [
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
     isOrganic: true,
-    weight: "2 kg",
+    weight: 1,
     tags: ["Chicken", "Leg", "Chest", "Boneless", "Protein"],
+    items: ["Chicken Chest", "Chicken Thigh", "Chicken Wings", "Drumstick", "Liver", "Heart"],
   },
   {
     id: "breast-boneless",
@@ -240,7 +243,7 @@ export const productData: Product[] = [
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
     isOrganic: true,
-    weight: "1 kg",
+    weight: 1,
     tags: ["Chicken", "Brest", "Boneless"],
   },
   {
@@ -256,7 +259,7 @@ export const productData: Product[] = [
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
     isOrganic: true,
-    weight: "1 kg",
+    weight: 1,
     tags: ["Chicken", "Cubes", "Boneless"],
   },
   {
@@ -272,7 +275,7 @@ export const productData: Product[] = [
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
     isOrganic: true,
-    weight: "1 kg",
+    weight: 1,
     tags: ["Chicken", "Leg", "Boneless"],
   },
   {
@@ -281,14 +284,14 @@ export const productData: Product[] = [
     price: 1299,
     image: "/products/chicken-strips-boneless.png",
     description:
-      "Chicken Strips Boneless are tender, lean chicken breast pieces cut into long strips for quick and easy cooking. Perfect for fried snacks, wraps, burgers, pasta, and stir-fry recipes, they offer high protein and delicious flavor in every bite.",
+      "Chicken Strips Boneless are tender, lean chicken breast pieces cut into long strips for quick and easy cooking. Perfect for fried snacks, wraps, Gigabyte, pasta, and stir-fry recipes, they offer high protein and delicious flavor in every bite.",
     category: "chicken",
     subCategory: "boneless",
     stock: "Available",
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
     isOrganic: true,
-    weight: "1 kg",
+    weight: 1,
     tags: ["Chicken", "Strips", "Boneless"],
   },
   {
@@ -304,7 +307,7 @@ export const productData: Product[] = [
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
     isOrganic: true,
-    weight: "1 kg",
+    weight: 1,
     tags: ["Chicken", "Thigh", "Boneless"],
   },
   {
@@ -320,7 +323,7 @@ export const productData: Product[] = [
     brand: "Meat Zoo",
     vendor: "Farm and Local Store",
     isOrganic: true,
-    weight: "1 kg",
+    weight: 1,
     tags: ["Chicken", "Heart", "Gizzard", "Liver"],
   },
 ];

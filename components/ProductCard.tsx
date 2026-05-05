@@ -25,7 +25,9 @@ export function ProductCard({ product }: ProductCardProps) {
         </div>
 
         <div className="space-y-4 mt-auto">
-          <p className="text-lg font-bold text-brand-primary">Rs {product.price.toLocaleString()} /kg</p>
+          <p className="text-lg font-bold text-brand-primary">
+            Rs {product.price.toLocaleString()} {product.subCategory === "family-pack" ? `/ ${product.weight} kg` : "/kg"}
+          </p>
 
           <div className="grid grid-cols-1 gap-3">
             <Link

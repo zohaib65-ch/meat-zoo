@@ -80,32 +80,27 @@ export default async function ProductDetailPage({ params }: PageProps) {
                 {product.weight && (
                   <div className="flex items-center gap-2 rounded-lg bg-brand-cream px-3 py-1 text-brand-dark">
                     <Weight size={18} />
-                    <span className="font-bold">{product.weight}</span>
+                    <span className="font-bold">{product.weight} kg</span>
                   </div>
                 )}
               </div>
-
-              <div className="grid grid-cols-2 gap-y-4 border-y border-brand-surface py-6 text-sm">
-                <div className="flex items-center gap-3">
-                  <Package size={18} className="text-brand-muted" />
-                  <div>
-                    <p className="text-xs text-brand-muted font-medium">Brand</p>
-                    <p className="font-bold text-brand-dark">{product.brand || "Meat Zoo"}</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Store size={18} className="text-brand-muted" />
-                  <div>
-                    <p className="text-xs text-brand-muted font-medium">Vendor</p>
-                    <p className="font-bold text-brand-dark">{product.vendor || "Farm & Local Store"}</p>
-                  </div>
-                </div>
-              </div>
-
               <div className="space-y-3">
                 <h3 className="text-lg font-bold text-brand-dark">Product Description</h3>
                 <p className="text-brand-muted md:text-base text-sm leading-relaxed">{product.description}</p>
               </div>
+
+              {product.items && product.items.length > 0 && (
+                <div className="space-y-3">
+                  <h3 className="text-lg font-bold text-brand-dark">Pack Contents</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {product.items.map((item) => (
+                      <span key={item} className="inline-block rounded-full bg-brand-primary/10 px-3 py-1 text-sm font-medium text-brand-primary">
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {product.tags && product.tags.length > 0 && (
                 <div className="flex flex-wrap gap-2 pt-2">
