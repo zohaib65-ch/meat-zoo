@@ -232,7 +232,7 @@ export const productData: Product[] = [
   },
   {
     id: "breast-boneless",
-    name: "Chicken Brest Boneless",
+    name: "Chicken Breast Boneless",
     price: 1249,
     image: "/products/chicken-brest-boneless.png",
     description:
