@@ -88,10 +88,6 @@ export default function ProductsPage() {
         <section className="border-b border-brand-surface bg-brand-white">
           <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
             <div className="flex items-center gap-3 py-4 overflow-x-auto no-scrollbar">
-              <div className="flex items-center gap-2 mr-4 text-brand-muted">
-                <Layers size={16} />
-                <span className="text-xs font-bold uppercase">Sub Categories:</span>
-              </div>
               {subCategories.map((sub) => {
                 const isActive = activeSubCategory === sub.id;
                 return (

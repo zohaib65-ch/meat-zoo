@@ -9,6 +9,7 @@ const quickLinks = [
   { label: "About", href: "/about" },
   { label: "Vision", href: "/vision" },
   { label: "Partners", href: "/partners" },
+  { label: "Careers", href: "/career" },
   { label: "Meatzoo Club", href: "/club" },
   { label: "Contact", href: "/contact" },
 ];
