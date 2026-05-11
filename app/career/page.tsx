@@ -80,8 +80,8 @@ export default function CareerPage() {
           <p className="mb-4 sm:mb-6 text-xs sm:text-sm text-brand-cream/80">If you are passionate about quality service and want to be part of a growing team, we would love to hear from you.</p>
           <div className="inline-flex flex-col items-center">
             <span className="text-[10px] sm:text-sm text-brand-cream/60 uppercase tracking-widest mb-1">Send your CV</span>
-            <a href="mailto:career@meatzoo.pk" className="text-lg sm:text-xl font-bold text-brand-primary hover:text-white transition-colors break-all">
-              career@meatzoo.pk
+            <a href="mailto:meatzoo.pk@gmail.com" className="text-lg sm:text-xl font-bold text-brand-primary hover:text-white transition-colors break-all">
+              meatzoo.pk@gmail.com
             </a>
           </div>
         </div>
